@@ -5,7 +5,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "stdio.h"
-const char * rev ="A   3  HIL JM O   2TUVWXY51SE Z  8 ";
+const char * rev ="A   3  HIL JM O   2TUVWXY51SE Z  8 ";//26个字母宽度
 const char * msg[]={"not a palindrome","a regular palindrome","a mirrored str","a regular palindrome and mirrored str"};
 
 char r(char ch){
@@ -13,7 +13,7 @@ char r(char ch){
     return rev[ch - '0' +25];
 }
 int main(){
-    char s[50];
+    char s[50];//测试用例字母全部大写
     while (scanf("%s",s)==1){
         unsigned long len=strlen(s);
         int p=1,m=1;
